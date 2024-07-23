@@ -1,0 +1,93 @@
+/* Container adjustments */
+.container {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure it does not wrap */
+}
+
+/* Sidebar styling */
+.sidebar {
+    flex: 0 0 250px; /* Fixed width for the sidebar */
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+/* Content area styling */
+.content {
+    flex: 1; /* Use remaining space */
+    padding: 20px;
+    max-width: 100%; /* Allow full width usage */
+    margin-right: 0; /* Remove any existing right margin */
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure images are responsive */
+.author__avatar img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Header and paragraph styling */
+.author__content h3, .author__content p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Title and section headers styling */
+h1, h2 {
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* List styling */
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f4f4f4;
+    margin-top: 20px;
+}
+
+/* Icon and link styling within author urls */
+.author__urls-wrapper {
+    font-size: 1.4em;
+}
+
+.author__urls {
+    display: flex;
+    justify-content: flex-start; /* Align items to the start */
+    padding: 0;
+    list-style: none;
+}
+
+.author__urls li {
+    margin-right: 10px; /* Adjust spacing between items */
+}
+
+.author__urls li a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.author__urls li a i {
+    margin-right: 5px;
+}
